@@ -1,0 +1,5 @@
+INDEX VERSION 1.122+E:\FIAP\Análise e Desenvolvimento de Sistemas\AULAS 1º ANO\1TDSS - NOTURNO\AM - JPro\AM - Desenvovimento\.metadata\.plugins\org.eclipse.wst.jsdt.core\indexes
+2820186581.index
+1519845545.index
+3454266066.index
+3255890892.index

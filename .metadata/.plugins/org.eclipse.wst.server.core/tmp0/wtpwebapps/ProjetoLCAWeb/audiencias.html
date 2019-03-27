@@ -1,0 +1,177 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+<title>Advocacia LCA</title>
+<link rel="stylesheet" type="text/css" href="css/style.css"></link>
+<link rel="stylesheet" type="text/css" href="css/jquery-ui.css"></link>
+<script type='text/javascript' src='js/jquery-1.8.0.min.js'></script>
+<script type='text/javascript' src='js/jquery-ui-1.8.23.custom.min.js'></script>
+<script type='text/javascript' src='js/jquery.ui.datagrid.min.js'></script>
+<script type='text/javascript' src='js/custom.jpro.js'></script>
+<script type='text/javascript'>
+$(window).load(function(){
+(function($){
+    var $dgLocal = $('.data-grid-local')
+    
+    $dgLocal.datagrid({
+        jsonStore: {
+            data: {"rows":[
+                {"id":"1","nome":"Fulano de Tal","empresa":"Empresa 1"}
+                ,{"id":"2","nome":"Beltrano da Silva","empresa":"Empresa 2"}
+                ,{"id":"3","nome":"Beltrano da Silva","empresa":"Empresa do tal"}
+                ,{"id":"4","nome":"Beltrano da Silva","empresa":"Empresa 123122"}
+                ,{"id":"5","nome":"Beltrano da Silva","empresa":"Empresa 2"}
+                ,{"id":"6","nome":"Beltrano da Silva","empresa":"Empresa 3312"}
+                ,{"id":"7","nome":"Beltrano da Silva","empresa":"Empresa 312"}
+                ,{"id":"8","nome":"Beltrano da Silva","empresa":"Empresa 3123122"}
+                ,{"id":"9","nome":"Fulano de Tal","empresa":"Empresa 221"}
+                ,{"id":"10","nome":"Beltrano da Silva","empresa":"Empresa 2"}
+                ,{"id":"11","nome":"Beltrano da Silva","empresa":"Empresa 3123122"}
+                ,{"id":"12","nome":"Beltrano da Silva","empresa":"Empresa 2"}
+                ,{"id":"13","nome":"Beltrano da Silva","empresa":"Empresa 2"}
+                ,{"id":"14","nome":"Beltrano da Silva","empresa":"Empresa 2"}
+                ,{"id":"15","nome":"Beltrano da Silva","empresa":"Empresa 2"}
+                ,{"id":"16","nome":"Beltrano da Silva","empresa":"Empresa 2"}
+                ,{"id":"17","nome":"Fulano de Tal","empresa":"Empresa 2"}
+                ,{"id":"18","nome":"Beltrano da Silva","empresa":"Empresa 1232"}
+                ,{"id":"18","nome":"Beltrano da Silva","empresa":"Empresa 2"}
+                ,{"id":"20","nome":"Fulano de Tal","empresa":"Empresa 2"}
+                ,{"id":"21","nome":"Beltrano da Silva","empresa":"Empresa23 2"}
+                ,{"id":"22","nome":"Beltrano da Silva","empresa":"Empresa 2"}
+                ,{"id":"23","nome":"Fulano de Tal","empresa":"Empresa 1233332"}
+            ]}
+        }
+        ,pagination:true
+        ,mapper:[{
+            name: 'id',alias:'Código',css:{width:50,textAlign:'center'}
+        },{
+            name: 'nome',alias:'Nome',css:{width:300,textAlign:'left'}
+        },{
+            name: 'empresa',alias:'Empresa',css:{textAlign:'left'}
+        }]
+    })
+    
+})(jQuery)
+});//]]>  
+</script>
+
+<style type='text/css'>
+.ui-datagrid {width:100%;}
+.ui-datagrid thead th
+,.ui-datagrid tbody td {text-align:left;padding:0.5em 0.3em;vertical-align:middle;}
+#data-grid-local {width:1000px;}
+
+.ui-corner-tl { -moz-border-radius-topleft: 2px; -webkit-border-top-left-radius: 2px; border-top-left-radius: 2px; }
+.ui-corner-tr { -moz-border-radius-topright: 2px; -webkit-border-top-right-radius: 2px; border-top-right-radius: 2px; }
+.ui-corner-bl { -moz-border-radius-bottomleft: 2px; -webkit-border-bottom-left-radius: 2px; border-bottom-left-radius: 2px; }
+.ui-corner-br { -moz-border-radius-bottomright: 2px; -webkit-border-bottom-right-radius: 2px; border-bottom-right-radius: 2px; }
+.ui-corner-top { -moz-border-radius-topleft: 2px; -webkit-border-top-left-radius: 2px; border-top-left-radius: 2px; -moz-border-radius-topright: 2px; -webkit-border-top-right-radius: 2px; border-top-right-radius: 2px; }
+.ui-corner-bottom { -moz-border-radius-bottomleft: 2px; -webkit-border-bottom-left-radius: 2px; border-bottom-left-radius: 2px; -moz-border-radius-bottomright: 2px; -webkit-border-bottom-right-radius: 2px; border-bottom-right-radius: 2px; }
+.ui-corner-right {  -moz-border-radius-topright: 2px; -webkit-border-top-right-radius: 2px; border-top-right-radius: 2px; -moz-border-radius-bottomright: 2px; -webkit-border-bottom-right-radius: 2px; border-bottom-right-radius: 2px; }
+.ui-corner-left { -moz-border-radius-topleft: 2px; -webkit-border-top-left-radius: 2px; border-top-left-radius: 2px; -moz-border-radius-bottomleft: 2px; -webkit-border-bottom-left-radius: 2px; border-bottom-left-radius: 2px; }
+.ui-corner-all { -moz-border-radius: 2px; -webkit-border-radius: 2px; border-radius: 2px; }
+</style>
+</head>
+<body>
+<div class="pack">
+
+	<div class="top">
+		<img src="images/logo.png" alt="" >
+		<div class="nav">
+			<ul>
+				<li><a href="index.html">Início</a></li>
+				<li><a href="processos.html">Processos</a></li>
+				<li><a href="honorarios.html">Honorários</a></li>
+				<li><a href="audiencias.html">Audiências</a></li>
+				<li><a href="relatorios.html">Relatórios</a></li>			
+			</ul>
+		</div>
+	</div>		
+	<div class="middle">
+	
+	<h3>Gestão de Audiências<span id="nova">+</span></h3>
+	
+	<div class="pack-form">
+		<h3>Agendar Audiência</h3>
+		<form>
+		<div class="box-form-full">
+			<div class="field-left"><label>Processo</label></div>
+			<div class="field-right">
+			<select>
+				<option></option>
+			</select>
+			</div>
+		</div>
+		
+		<div class="clear"></div>
+			
+		<div class="box-form-full">	
+			<div class="field-left"><label>Advogado</label></div>
+			<div class="field-right">
+			<select>
+				<option></option>
+			</select>
+			</div>
+		</div>
+		
+		<div class="clear"></div>
+		
+		<div class="box-form-left">
+			<div class="field-left"><label>Forum</label></div>
+			<div class="field-right">
+			<select>
+				<option></option>
+			</select>
+			</div>
+		</div>
+		
+		<div class="box-form-right">
+			<div class="field-left"><label>Sala</label></div>
+			<div class="field-right"><input type="text" /></div>
+		</div>
+			
+		<div class="clear"></div>
+			
+		<div class="box-form-left">
+				<div class="field-left"><label>Data</label></div>
+			<div class="field-right"><input type="text" class="calendar" /></div>
+		</div>
+			
+		<div class="box-form-right">
+			<div class="field-left"><label>Hora</label></div>
+			<div class="field-right"><input type="text" /></div>
+		</div>
+		
+		<div class="clear"></div>
+		
+		<div class="box-form-left">
+		<div class="field-right">
+			<label>Notificar cliente por e-mail</label>
+			<input type="checkbox" />
+		</div>
+		</div>
+		
+		<div class="box-form-right">
+			<input type="button" value="Reenviar e-mail" />
+		</div>
+		
+		<div class="clear"></div>
+		
+		<div class="box-form-full">
+			<input type="button" value="Agendar Audiência" />
+		</div>
+			
+		</form>
+	</div>
+
+	<div class="data-grid-local"></div>
+	</div>
+	<div class="footer">
+		<p>Todos os Direitos Reservados - Desenvolvidor por <a href="#">JPro</a></p>	
+	</div>
+
+
+</div>
+</body>
+</html>
